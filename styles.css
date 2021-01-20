@@ -1,80 +1,48 @@
 body{
     background: white;
-    margin: 0px;
     font-family: 'Montserrat', sans-serif;
 }
-
-div{
-    box-sizing: border-box;
-}
-
 header{
     background: white;
-    padding: 10px;
+    padding: 0.5rem;
 }
-
 header h1{
     margin: 0;
     text-align: center;
     font-size: 3em;
     border-bottom: 2px solid pink;
 }
-
-div.post{
-    background: white;
-    margin-top: 10px;
-}
-
-div.post img{
-    width: 100%;
-}
-
-div.post .post-header div:first-child {
-    display: inline-block;
-    width: 80%;
-}
-
-div.post .post-header div:last-child {
-    display: inline-block;
-    width: 20%;
-    padding: 10px;
-    text-align: right;
-}
-
-div.post h2, div.post p{
-    padding: 10px;
-    margin: 0;
-}
-
-div.container{
+.container{
     width: 400px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    font-weight: 500;
 }
-
+.post{
+    background: white;
+    margin-top: 2rem;
+}
+.post-header:first-child{
+    display: flex;
+    justify-content: start;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    background-color: pink;
+    border-radius: 15px;
+}
+.post img{
+    width: 100%;
+}
 img {
     transition: all 1s;
     object-fit: cover;
 }
-
 img:hover {
     transform: scale(1.1);
 }
-
-div.post-my {
-    display: flex;
-    padding: 10px;
-    text-align: left;
-    margin: autopx 10px 10px 10px;
-    font-weight: bold;
-}
-
-div.span {
-    padding: 10px;
-    text-align: left;
-    margin-left: 50%;
-    font-weight: lighter; 
+.text {
+    margin-top: 2rem;
 }
 
